@@ -6,7 +6,6 @@ import beneficioimage from "../public/beneficios.jpg";
 import { Input } from "./components/ui/input";
 import { Button } from "./components/ui/button";
 import {
-  ArrowRight,
   ChartNoAxesCombined,
   Handshake,
   LaptopMinimalCheck,
@@ -17,7 +16,6 @@ import {
   SquareActivity,
 } from "lucide-react";
 import { Card, CardContent } from "./components/ui/card";
-import { ReactNode } from "react";
 import {
   Accordion,
   AccordionContent,
