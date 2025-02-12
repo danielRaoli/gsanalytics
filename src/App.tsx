@@ -36,6 +36,7 @@ import {
 import { FaInstagram, FaPhoneVolume, FaWhatsapp } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { GoPaperAirplane } from "react-icons/go";
+import Hero from "./components/hero";
 
 interface Servico {
   icon: LucideIcon;
@@ -162,7 +163,7 @@ function App() {
   return (
     <>
       <main className="h-full">
-        <header className="flex flex-col space-y-3 w-full px-10 md:px-20 py-4 justify-between bg-neutral-100 items-center md:flex-row ">
+        <header className="flex flex-col space-y-3 w-full px-10 md:px-20 py-4 justify-between bg-transparent  items-center md:flex-row ">
           <img src={icon} alt="gs analytics icon" className="h-14" />
           <ul className="flex gap-4">
             <li>
@@ -182,32 +183,7 @@ function App() {
             </li>
           </ul>
         </header>
-        <section className="flex flex-col w-full h-auto p-2 py-14 gap-10 relative md:flex-row md:px-20">
-          <div className="flex flex-col gap-2 md:w-[50%]">
-            <h1 className="text-4xl font-semibold text-orange-600 md:text-5xl">
-              Transformando investimentos em crescimento real para o seu negócio
-            </h1>
-            <p className=" md:text-xl">
-              especialista em gestão de tráfego e Growth Hacking, com 8 anos de
-              experiência ajudando empresas a crescer. Minha missão é conectar o
-              público certo ao seu negócio. Vamos juntos levar a sua marca a
-              outro nível?"
-            </p>
-
-            <Button className="rounded-md w-min p-3 bg-orange-600 px-8 hover:bg-orange-700">
-              Saber Mais
-            </Button>
-          </div>
-          <Card className="w-full p-0 rounded-xl h-min  md:w-[50%]">
-            <CardContent className="w-full p-0  ">
-              <img
-                src={banner}
-                alt=""
-                className="w-[100%] h-auto object-cover rounded-xl shadow-xl"
-              />
-            </CardContent>
-          </Card>
-        </section>
+        <Hero />
         <section className="bg-neutral-100 h-auto p-4 w-full md:px-20  py-10">
           <div className="w-full rounded-xl bg-orange-500 p-4 flex flex-col h-full justify-center md:p-10 ">
             <div className="flex flex-col md:flex-row w-full items-center md:gap-10">
