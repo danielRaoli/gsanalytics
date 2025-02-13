@@ -1,5 +1,5 @@
 import icon from "../public/gsicon.png";
-import banner from "../public/500 (1).png";
+
 import logopreta from "../public/logo-gs-branco.png";
 import logo from "../public/logo-gs-branco-e-preto.png";
 import beneficioimage from "../public/beneficios.jpg";
