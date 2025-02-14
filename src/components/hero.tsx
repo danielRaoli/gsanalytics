@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col w-full h-auto p-2 md:first-letter md:py-32 gap-10 relative  md:px-24">
+    <section className="flex flex-col w-full h-auto  md:first-letter py-24 md:py-32 gap-10 relative  md:px-24">
       <DotPattern
         className={cn(
           "[mask-image:radial-gradient(1000px_circle_at_center,white,transparent)]"
@@ -17,15 +17,15 @@ export default function Hero() {
             animation="blurInUp"
             as="h1"
             by="character"
-            className="text-4xl font-semibold text-center text-black md:text-5xl"
+            className="text-3xl font-semibold text-center text-black md:text-5xl"
           >
-            Transformando investimentos em
+            Converta investimentos em
           </TextAnimate>
           <TextAnimate
             animation="blurInUp"
             as="span"
             by="character"
-            className="text-4xl font-semibold text-center text-orange-600 md:text-5xl"
+            className="text-3xl font-semibold text-center text-orange-600 md:text-5xl"
           >
             crescimento
           </TextAnimate>
@@ -33,7 +33,7 @@ export default function Hero() {
             animation="blurInUp"
             as="span"
             by="character"
-            className="text-4xl font-semibold text-center text-black md:text-5xl"
+            className="text-3xl font-semibold text-center text-black md:text-5xl"
           >
             real para o seu
           </TextAnimate>
@@ -41,7 +41,7 @@ export default function Hero() {
             animation="blurInUp"
             as="span"
             by="character"
-            className="text-4xl font-semibold text-center text-orange-600 md:text-5xl"
+            className="text-3xl font-semibold text-center text-orange-600 md:text-5xl"
           >
             negócio
           </TextAnimate>

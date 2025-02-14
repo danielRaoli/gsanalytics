@@ -1,5 +1,4 @@
 import icon from "../public/gsicon.png";
-
 import logopreta from "../public/logo-gs-branco.png";
 import logo from "../public/logo-gs-branco-e-preto.png";
 import beneficioimage from "../public/beneficios.jpg";
@@ -34,7 +33,7 @@ import {
   FormMessage,
 } from "./components/ui/form";
 import { FaInstagram, FaPhoneVolume, FaWhatsapp } from "react-icons/fa";
-import { FaMapLocationDot } from "react-icons/fa6";
+
 import { GoPaperAirplane } from "react-icons/go";
 import Hero from "./components/hero";
 
@@ -167,36 +166,44 @@ function App() {
           <img src={icon} alt="gs analytics icon" className="h-14" />
           <ul className="flex gap-4">
             <li>
-              <a href="#" className="text-orange-500 font-semibold text-xl">
+              <a href="#servicos" className="text-orange-500  md:text-xl">
+                Serviços
+              </a>
+            </li>
+            <li>
+              <a href="#sobre" className="text-orange-500  md:text-xl">
                 Sobre
               </a>
             </li>
             <li>
-              <a href="#" className="text-orange-500 font-semibold text-xl">
-                Servico
+              <a href="#faq" className="text-orange-500  md:text-xl">
+                Faq
               </a>
             </li>
             <li>
-              <a href="#" className="text-orange-500 font-semibold text-xl">
+              <a href="#contato" className="text-orange-500  md:text-xl">
                 Contato
               </a>
             </li>
           </ul>
         </header>
         <Hero />
-        <section className="bg-neutral-100 h-auto p-4 w-full md:px-20  py-10">
-          <div className="w-full rounded-xl bg-orange-500 p-4 flex flex-col h-full justify-center md:p-10 ">
+        <section
+          id="servicos"
+          className="bg-neutral-100 h-auto p-4 w-full md:px-20  py-10"
+        >
+          <div className="w-full rounded-xl bg-orange-600 p-4 flex flex-col h-full justify-center md:p-10 ">
             <div className="flex flex-col md:flex-row w-full items-center md:gap-10">
               <div className="h-full flex flex-col gap-2 md:gap-4 md:w-[50%]">
                 <img
-                  src={logo}
+                  src={logopreta}
                   alt="logo Gs analytics"
                   className="h-auto w-24 md:w-40 mx-auto"
                 />
                 <h2 className="text-white text-3xl md:text-4xl font-semibold text-center ">
                   Soluções sob medida para o crescimento do seu negócio
                 </h2>
-                <p className="text-center text-lg">
+                <p className="text-center text-black text-lg">
                   Combinando estratégias de tráfego pago, otimização e técnicas
                   avançadas de Growth Hacking, ofereço soluções personalizadas
                   para cada etapa do seu funil de vendas.
@@ -206,9 +213,8 @@ function App() {
                 {servicos.map((servico) => (
                   <Card className="w-auto p-4 py-10">
                     <CardContent className="p-0 flex flex-col justify-center items-center space-y-3">
-                      <div className="bg-orange-300 w-20 h-20 rounded-full flex items-center justify-center">
-                        <servico.icon size={40} />
-                      </div>
+                      <servico.icon className="text-orange-600" size={40} />
+
                       <span className="text-center text-orange-600 font-semibold">
                         {servico.service}
                       </span>
@@ -224,7 +230,10 @@ function App() {
             </p>
           </div>
         </section>
-        <section className="px-4 py-8 md:flex md:px-20 gap-10 md:items-center">
+        <section
+          id="sobre"
+          className="px-4 py-8 md:flex md:px-20 gap-10 md:items-center"
+        >
           <div className="md:w-[50%]">
             <h2 className="text-3xl font-semibold text-center">
               O que você ganha ao trabalhar com a<br />
@@ -261,7 +270,7 @@ function App() {
             ))}
           </div>
         </section>
-        <section className="bg-orange-600 p-4 w-full md:flex md:p-20">
+        <section id="faq" className="bg-orange-600 p-4 w-full md:flex md:p-20">
           <div className="w-full bg-neutral-100 rounded-2xl p-4 md:flex md:justify-center md:items-center gap-10 md:p-14">
             <div className="w-full md:w-[50%] flex  flex-col">
               {faq.map((pergunta) => (
@@ -291,7 +300,10 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="bg-orange-600 px-4 py-10 md:flex md:p-20 items-center gap-10">
+        <section
+          id="contato"
+          className="bg-orange-600 px-4 py-10 md:flex md:p-20 items-center gap-10"
+        >
           <div className="w-full md:w-[50%]">
             <h2 className="text-white text-3xl md:text-5xl mb-4  font-semibold text-center">
               Quer resultados reais? Vamos conversar!
@@ -361,13 +373,7 @@ function App() {
             <img src={logopreta} alt="" className="w-32" />
             <div className="flex gap-1 items-center">
               <FaPhoneVolume className="text-white" />
-              <span className="text-white">(74) 99917-3640</span>
-            </div>
-            <div className="flex gap-1 items-center">
-              <FaMapLocationDot className="text-white" />
-              <span className="text-white">
-                Av. Primeiro de Janeiro, 527, Irecê - BA
-              </span>
+              <span className="text-white">(74) 9917-3640</span>
             </div>
           </div>
 
@@ -376,7 +382,8 @@ function App() {
             <div className="flex justify-center gap-3">
               <a
                 className="hover:text-[#d8ad5e]"
-                href="https://www.instagram.com/contabilidadelucasrodrigues/"
+                href="https://www.instagram.com/gsanalytics_brasil/"
+                target="_blank"
               >
                 <FaInstagram
                   className="hover:text-[#d8ad5e] transition duration-300 text-white"
@@ -385,7 +392,8 @@ function App() {
               </a>
               <a
                 className="hover:text-[#d8ad5e] transition duration-300 text-white"
-                href="https://api.whatsapp.com/message/YNMNAYD2LS54N1?autoload=1&app_absent=0"
+                href="https://api.whatsapp.com/send?phone=557499173640&text=Ol%C3%A1"
+                target="_blank"
               >
                 <FaWhatsapp size={40} />
               </a>
@@ -394,13 +402,13 @@ function App() {
           <div className="flex flex-col gap-3 items-center justify-center  flex-1">
             <span className="text-white text-center font-semibold">MENU</span>
             <a
-              href="#about"
+              href="#sobre"
               className="text-white hover:text-[#d8ad5e] transition duration-300 text-center"
             >
               sobre
             </a>
             <a
-              href="#service"
+              href="#servicos"
               className="text-white hover:text-[#d8ad5e] transition duration-300 text-center"
             >
               serviços
