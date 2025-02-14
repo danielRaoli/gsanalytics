@@ -1,6 +1,5 @@
 import icon from "../public/gsicon.png";
 import logopreta from "../public/logo-gs-branco.png";
-import logo from "../public/logo-gs-branco-e-preto.png";
 import beneficioimage from "../public/beneficios.jpg";
 import { Input } from "./components/ui/input";
 import { Button } from "./components/ui/button";
