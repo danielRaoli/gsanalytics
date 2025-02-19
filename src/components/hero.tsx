@@ -12,20 +12,29 @@ export default function Hero() {
         )}
       />
       <div className="flex flex-col gap-2 z-10">
-        <div className="flex flex-wrap justify-center items-center gap-x-2">
+        <div className="flex flex-wrap justify-center items-center gap-x-2 px-4">
           <TextAnimate
             animation="blurInUp"
             as="h1"
             by="character"
-            className="text-3xl font-semibold text-center text-black md:text-5xl"
+            className="text-2xl font-semibold text-center text-black md:text-5xl"
           >
-            Converta investimentos em
+            Converta
           </TextAnimate>
+          <TextAnimate
+            animation="blurInUp"
+            as="h1"
+            by="character"
+            className="text-2xl font-semibold text-center text-black md:text-5xl"
+          >
+            investimentos em
+          </TextAnimate>
+
           <TextAnimate
             animation="blurInUp"
             as="span"
             by="character"
-            className="text-3xl font-semibold text-center text-orange-600 md:text-5xl"
+            className="text-2xl font-semibold text-center text-orange-600 md:text-5xl"
           >
             crescimento
           </TextAnimate>
@@ -33,7 +42,7 @@ export default function Hero() {
             animation="blurInUp"
             as="span"
             by="character"
-            className="text-3xl font-semibold text-center text-black md:text-5xl"
+            className="text-2xl font-semibold text-center text-black md:text-5xl"
           >
             real para o seu
           </TextAnimate>
@@ -41,7 +50,7 @@ export default function Hero() {
             animation="blurInUp"
             as="span"
             by="character"
-            className="text-3xl font-semibold text-center text-orange-600 md:text-5xl"
+            className="text-2xl font-semibold text-center text-orange-600 md:text-5xl"
           >
             negócio
           </TextAnimate>
